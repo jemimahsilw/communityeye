@@ -1,0 +1,270 @@
+body{
+    background-color:whitesmoke;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0;
+}
+#page1{
+    width:100%;
+    justify-content: center;
+}
+#header{
+    border-radius:50px;
+    margin:0;
+    padding:10px;
+    width: 100%;
+}
+.header-container{
+    display: flex;
+    align-content: center;
+    justify-content:space-evenly;
+    height: 60px;
+}
+.logo img{
+    height: 70px;
+    width: auto;
+    padding: 0;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    margin:0;
+    padding:0;
+    height: 40px;
+}
+.menu li a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 8px 12px
+}
+/* From Uiverse.io by barisdogansutcu */ 
+button {
+  padding: 0px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: red;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  letter-spacing: 3px;
+  background-color: hsl(0, 78%, 49%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(184, 33, 45) 0px 7px 29px 0px;
+}
+
+button:active {
+  letter-spacing: 3px;
+  background-color: hsl(0, 78%, 49%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(184, 33, 45) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+#page2{
+    padding-top: 50px;
+}
+#picsandname{
+    margin-top: 5px;
+    /*border-radius:5px;*/
+    position: relative;
+    width:100%;
+    height: 500px;
+    overflow:hidden;
+}
+/* slideshow styles */
+.slideshow{
+    width:100%;
+    height:100%;
+    right: 0;
+    left: 0;
+    position:relative;
+}
+/* images*/
+.slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:0;
+    transition: opacity 1s ease-in-out;
+}
+/* active image */
+.slide.active{
+    opacity:1;
+}
+/*heading on top of images*/
+.title{
+
+    position: absolute;
+    top:60%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size:3rem;
+    text-align: center;
+    font-weight: bold;
+    z-index: 2;
+    background: rgb(0, 0, 0, 0.4);
+    padding:10px 20px;
+    border-radius:5px
+}
+.title p{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.938);
+}
+.heading{
+    text-align: center;
+}
+.visionandmission{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* From Uiverse.io by SteveBloX */
+.visionandmission .card {
+  box-sizing: border-box;
+  width: 35rem;
+  height: 254px;
+  background: white;
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  /*text-align: center;*/
+  cursor: pointer;
+  transition: all 0.5s;
+  /*display: flex;*/
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  /*font-weight: bold;*/
+  color: black;
+  padding: 20px;
+}
+#page3{
+    background-image: url("law.jpg");
+    background-size: cover;
+}
+.card {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background: white;
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  /*border-radius: 17px;
+  /*text-align: center;*/
+  cursor: pointer;
+  /*transition: all 0.5s;
+  /*display: flex;*/
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  /*font-weight: bold;*/
+  color: black;
+  padding:50px;
+  transition: transform 0.3s ease, border 0.3s ease;
+
+}
+
+.card:hover {
+  border: 1px solid rgb(184, 33, 45);
+  transform: scale(1.02);
+}
+
+.card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+.heading-with-icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.heading-with-icon img{
+    width:42px;
+    height:auto;
+}
+.servicebox1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.servicebox2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.servicebox3{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* From Uiverse.io by joe-watson-sbf */ 
+.flip-card {
+  background-color: transparent;
+  width: 90%;
+  height: 254px;
+  perspective: 1000px;
+  font-family: sans-serif;
+  margin: 3rem;
+}
+
+.flip-card-front .title {
+  font-size: 1rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+  background: none;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid coral;
+  border-radius: 1rem;
+}
+
+.flip-card-front {
+  background: red;
+  color: black;
+}
+
+.flip-card-back {
+  background: red;
+  color: white;
+  transform: rotateY(180deg);
+}
+.card li{
+    font-weight: bold;
+}
+#page5{
+    margin: 0;
+    background-color: rgb(78, 17, 17);
+    color: white;
+}
